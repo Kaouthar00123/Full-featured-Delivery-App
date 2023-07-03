@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:paddingStart="4dp"
+    android:paddingLeft="4dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="4dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="4dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="8dp"
+    android:background="@color/white"
+    >
+
+
+    <TextView
+        android:id="@+id/etatCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="Etat"
+        android:textColor="@color/orange"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date"
+        android:textColor="@color/grisText"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/etatCmd"
+        app:layout_constraintTop_toBottomOf="@+id/etatCmd" />
+
+    <TextView
+        android:id="@+id/heureCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Heure"
+        android:textColor="@color/grisText"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/dateCmd"
+        app:layout_constraintTop_toBottomOf="@+id/dateCmd" />
+
+    <TextView
+        android:id="@+id/numCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="numero"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etatCmd" />
+
+    <TextView
+        android:id="@+id/restauCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="depuis restau"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/numCmd"
+        app:layout_constraintTop_toBottomOf="@+id/numCmd" />
+
+    <TextView
+        android:id="@+id/totaleCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="totale"
+        android:textColor="@color/green"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/restauCmd"
+        app:layout_constraintTop_toBottomOf="@+id/restauCmd" />
+
+    <ImageView
+        android:id="@+id/phoneLivreur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/heureCmd"
+        app:layout_constraintTop_toBottomOf="@+id/heureCmd"
+        app:srcCompat="@drawable/baseline_local_phone_24" />
+
+    <Button
+        android:id="@+id/detailsCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Details"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totaleCmd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "186846075123",
+    "project_id": "testtdm-befab",
+    "storage_bucket": "testtdm-befab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186846075123:android:21dddaf64649c0e320bf86",
+        "android_client_info": {
+          "package_name": "com.example.menuapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186846075123-hqdhdut3igkh93vkqrrv67kb9t1l4g34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5Lg-Rf34aCOahPWrGiT7-zcnWAB-eXqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186846075123-hqdhdut3igkh93vkqrrv67kb9t1l4g34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

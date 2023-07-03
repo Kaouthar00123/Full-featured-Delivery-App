@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_drawer"
+        android:title="Home"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/cart"
+        android:enabled="true"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="My Cart"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/orders"
+        android:enabled="true"
+        android:icon="@drawable/baseline_food_bank_24"
+        android:title="My orders"
+        android:visible="true" />
+</menu>

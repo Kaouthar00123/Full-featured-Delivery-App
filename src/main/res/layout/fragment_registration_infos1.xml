@@ -1,0 +1,133 @@
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Fragment.FragmentRegistrationInfos1">
+
+
+
+     <TextView
+         android:id="@+id/NameRegistration"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="30dp"
+         android:layout_marginTop="150dp"
+         android:layout_marginEnd="307dp"
+
+         android:text="Name*"
+         android:textColor="@color/grisText"
+         android:textSize="16sp"
+
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <EditText
+         android:id="@+id/editTextTextPersonName2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:inputType="textPersonName"
+         android:ems="10"
+         android:hint="Enter your Name"
+         android:minWidth="200dp"
+         android:minHeight="48dp"
+         android:textSize="15sp"
+
+         android:textColor="@color/grisText"
+         style="@style/MyEditTextStyle"
+
+
+         app:layout_constraintStart_toStartOf="@+id/NameRegistration"
+         app:layout_constraintTop_toBottomOf="@+id/NameRegistration" />
+
+     <TextView
+         android:id="@+id/EmailRegistration"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+
+         android:text="Email*"
+         android:textColor="@color/grisText"
+         android:textSize="16sp"
+
+         app:layout_constraintStart_toStartOf="@+id/NameRegistration"
+         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+     <EditText
+         android:id="@+id/EmailRegistrationEdit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:inputType="textEmailAddress"
+
+         android:ems="10"
+         android:hint="Enter your Name"
+         android:minWidth="200dp"
+         android:minHeight="48dp"
+         android:textSize="15sp"
+
+         android:textColor="@color/grisText"
+         style="@style/MyEditTextStyle"
+         app:layout_constraintStart_toStartOf="@+id/EmailRegistration"
+         app:layout_constraintTop_toBottomOf="@+id/EmailRegistration" />
+
+     <TextView
+         android:id="@+id/passwordRegistration"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+
+         android:text="Password*"
+         android:textColor="@color/grisText"
+         android:textSize="16sp"
+
+         app:layout_constraintStart_toStartOf="@+id/EmailRegistration"
+         app:layout_constraintTop_toBottomOf="@+id/EmailRegistrationEdit" />
+
+     <EditText
+         android:id="@+id/passwordRegistrationEdit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+
+         android:ems="10"
+         android:hint="Enter your password"
+         android:minWidth="200dp"
+         android:minHeight="48dp"
+         android:textSize="15sp"
+
+         android:elevation="8dp"
+
+         app:layout_constraintStart_toStartOf="@+id/passwordRegistration"
+         app:layout_constraintTop_toBottomOf="@+id/passwordRegistration" />
+
+     <Button
+         android:id="@+id/suivant1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="100dp"
+         android:text="Suivant"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent" />
+
+      <TextView
+          android:id="@+id/miniText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="63dp"
+          android:layout_marginTop="50dp"
+          android:layout_marginEnd="118dp"
+
+          android:text="this is a small text tttttttttt"
+          android:textColor="@color/grisText"
+
+          android:textSize="15sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+ </androidx.constraintlayout.widget.ConstraintLayout>

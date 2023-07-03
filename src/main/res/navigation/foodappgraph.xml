@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/foodappgraph"
+    app:startDestination="@id/fragmentListeRestau">
+
+    <fragment
+        android:id="@+id/fragmentCart"
+        android:name="com.example.menuapplication.Fragment.FragmentCart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentCommande"
+            app:destination="@id/fragmentCommande" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentListeRestau"
+        android:name="com.example.menuapplication.Fragment.FragmentListeRestau"
+        android:label="fragment_liste_restau"
+        tools:layout="@layout/fragment_liste_restau" >
+        <action
+            android:id="@+id/action_fragmentListeRestau_to_fragmentCart"
+            app:destination="@id/fragmentCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCommande"
+        android:name="com.example.menuapplication.Fragment.FragmentCommande"
+        android:label="fragment_commande"
+        tools:layout="@layout/fragment_commande" />
+</navigation>

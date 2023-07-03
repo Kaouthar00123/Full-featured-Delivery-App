@@ -1,0 +1,24 @@
+<!-- drawable/sign_in_but.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="356dp"
+    android:height="56dp"
+    android:viewportWidth="356"
+    android:viewportHeight="56"
+    >
+    <group>
+        <clip-path
+            android:pathData="M10 0H346C351.523 0 356 4.47715 356 10V46C356 51.5228 351.523 56 346 56H10C4.47715 56 0 51.5228 0 46V10C0 4.47715 4.47715 0 10 0Z"
+            />
+        <path
+            android:pathData="M0 0V56H356V0"
+            android:fillColor="#307A59"
+            />
+        <path
+            android:pathData="M10 0H346C351.523 0 356 4.47715 356 10V46C356 51.5228 351.523 56 346 56H10C4.47715 56 0 51.5228 0 46V10C0 4.47715 4.47715 0 10 0Z"
+            android:strokeWidth="2"
+            android:strokeColor="#2F80ED"
+            />
+    </group>
+</vector>

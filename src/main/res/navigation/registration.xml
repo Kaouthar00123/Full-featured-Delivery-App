@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration"
+    app:startDestination="@id/fragment_signup_1">
+
+    <fragment
+        android:id="@+id/fragment_signup_1"
+        android:name="com.example.menuapplication.fragment_signup_1"
+        android:label="fragment_signup_1"
+        tools:layout="@layout/fragment_signup_1" >
+        <action
+            android:id="@+id/action_fragment_signup_1_to_fragment_signup_2"
+            app:destination="@id/fragment_signup_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_signup_2"
+        android:name="com.example.menuapplication.fragment_signup_2"
+        android:label="fragment_signup_2"
+        tools:layout="@layout/fragment_signup_2" >
+        <action
+            android:id="@+id/action_fragment_signup_2_to_fragment_confirmation"
+            app:destination="@id/fragment_confirmation" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_confirmation"
+        android:name="com.example.menuapplication.fragment_confirmation"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" >
+        <action
+            android:id="@+id/action_fragment_confirmation_to_fragment_congrat"
+            app:destination="@id/fragment_congrat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_congrat"
+        android:name="com.example.menuapplication.fragment_congrat"
+        android:label="fragment_congrat"
+        tools:layout="@layout/fragment_congrat" />
+</navigation>
